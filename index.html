@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>My Page</title>
+    <style>
+      p{color: aliceblue;}
+      h1{color: aliceblue;}
+      button {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s ease-in-out;
+        font-size: 1.5em;
+        margin: 20px;
+        background-color: skyblue;
+        border: none;
+      }
+      button:hover {
+        transform: translateY(-3px);
+      }
+      body {
+			background-image: url("https://github.com/RoChuyo/Rochuyo.github.io/blob/main/img.jpg?raw=true");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+       
+    </style>
+  </head>
+  <body>
+    <div>
+      <button><a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics">S0</a></button>
+      <button>S1&nbsp;</button>
+      <button>S2&nbsp;</button>
+      <button>S3</button>
+      <button>S4S<br>
+      </button>
+      
+    </div>
+  
+    
+
+<head>
+  <title>3D Smile Face</title>
+  
+
+  <style>
+    #container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      perspective: 500px;
+      text-align: center;
+      margin: 10px auto;
+      
+    }
+
+    #face {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      transform-style: preserve-3d;
+      transform-origin: 50% 50%;
+      transition: transform 0.2s ease-in-out;
+      text-align: center
+    }
+
+    #face::before, #face::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: seashell;
+      border-radius: 50%;
+      transform-style: preserve-3d;
+      transform-origin: 50% 50%;
+      box-shadow: inset 0 0 0 10px skyblue;
+      text-align: center
+    }
+
+    #face::before {
+      transform: translateZ(30px);
+      text-align: center
+    }
+
+    #face::after {
+      transform: translateZ(-30px) rotateY(180deg);
+      text-align: center
+    }
+    button {
+  background-color: skyblue; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+  
+}
+
+p {
+  text-align: center
+  
+}
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="face"></div>
+  </div>
+
+  
+
+  <script>
+    var face = document.getElementById('face');
+
+    document.addEventListener('mousemove', function(event) {
+      var x = event.clientX;
+      var y = event.clientY;
+      var container = document.getElementById('container');
+      var containerWidth = container.offsetWidth;
+      var containerHeight = container.offsetHeight;
+      var rotateY = (x - containerWidth / 2) / containerWidth * 90;
+      var rotateX = (y - containerHeight / 2) / containerHeight * -90;
+      face.style.transform = 'rotateY(' + rotateY + 'deg) rotateX(' + rotateX + 'deg)';
+    });
+  </script>
+   <h1 style="text-align: center;">Ro chuyo Test1&nbsp;</h1>
+<p>Here is industrial design portfolio page</p>
+<P>これはROプロダクトデザインのポートフォリオ</P>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+   
+
+    <p>sorry&nbsp;</p>
+    <p>I'm glad to have entered my personal website, which is still under construction,&nbsp;</p>
+    <p><strong>so if you want to see more of my work, follow me on Instagram&nbsp;</strong></p>
+    <p>私のウェブサイトにアクセスしてくれて嬉しいです。このウェブサイトはまだ建設中であり、</p>
+    <p><strong>より多くの作品を見たい場合は、私のInstagramをフォローしてください。</strong>&nbsp;</p>
+    
+</body>
+
+</html>
